@@ -1,0 +1,20 @@
+.burger {
+  height: 185px;
+  color: red;
+}
+
+.putdown {
+ margin-top: 5%;
+ border:1px;
+ color: #262626;
+}
+
+
+.space {
+  margin-top: 5%;
+}
+
+.title {
+text-align: center;
+font-weight: bold;
+}

@@ -1,0 +1,28 @@
+<h1> Decouvrez Vos Pizzeria </h1>
+<div *ngIf="ListOfPizzaRestau">
+<div class="row">
+    <div class="col">
+<ul style="text-align:left; list-style:none;">
+<li *ngFor="let restauList of ListOfPizzaRestau">
+  <div class="card mb-3" style="max-width: 440px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+
+        <a (click)="productDetails(restauList.id)" routerLink=""><img src="/assets/image/pizza_yolo.jpg"  class="card-img" alt="image_chef_pizza"></a>
+        </div>
+        <div class="col-md-8 restau">
+          <div class="card-body">
+            <h3 class="card-title">{{restauList.name}}</h3>
+            <h5> Tel: {{restauList.telephone}}</h5>
+            <h5> Lieu: {{restauList.codePostal}}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- routerLink="{{this.restauService.baseUrl + '/restaurantId' + restauList.id +'?ts=' + getTS()}} -->

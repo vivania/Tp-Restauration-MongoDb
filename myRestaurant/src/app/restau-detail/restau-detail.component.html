@@ -1,0 +1,32 @@
+
+<h1>Restaurant Details</h1>
+{{listRestau | json}}
+<ul>
+  <li *ngIf="listRestau">
+    <h3 class="card-title">{{listRestau.name}}</h3>
+  </li>
+</ul>
+<div class="row">
+    <div class="col">
+<ul style="text-align:left; list-style:none;">
+<!-- <li *ngFor="let restaus of restau | async"> -->
+  <div class="card mb-3" style="max-width: 440px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+
+        <a ><img src="/assets/image/pizza_yolo.jpg"  class="card-img" alt="image_chef_pizza"></a>
+        </div>
+        <div class="col-md-8 restau">
+          <div class="card-body">
+           <!--  <h3 class="card-title">{{restaus.name}}</h3>
+            <h5> Tel: {{restaus.telephone}}</h5>
+            <h5> Lieu: {{restaus.codePostal}}</h5> -->
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- </li> -->
+</ul>
+</div>
+</div>
+
